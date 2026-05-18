@@ -1,16 +1,57 @@
-## Hi there 👋
+# Olá, eu sou o Rennan! 👋
 
-<!--
-**RennaN-C/RennaN-C** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="left">
+  <img src="https://img.shields.io/badge/Status-Buscando%20Estágio%20em%20Engenharia%20de%20Software-00f2aa?style=for-the-badge&logoWidth=40" alt="Status">
+</div>
 
-Here are some ideas to get you started:
+### 🎓 Sobre Mim
+Sou estudante de **Engenharia de Software (2024–2027)** focado no desenvolvimento de aplicações full-stack escaláveis e na otimização de rotinas lógicas complexas. No meu dia a dia, dedico-me a aplicar os fundamentos da engenharia para transformar problemas de negócio em código limpo, performático e bem estruturado.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Tenho forte inclinação para a arquitetura de backend, modelagem estrita de dados e integrações inteligentes com Inteligência Artificial, sempre priorizando a segurança da aplicação (*Privacy by Design*) e a conteinerização de ambientes.
+
+---
+
+### 🛠️ Tecnologias e Ferramentas
+
+Movo os meus projetos utilizando um ecossistema moderno e amplamente exigido pelo mercado de tecnologia:
+
+<div align="left">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" height="35" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" height="35" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" height="35" />
+  <br><br>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" height="35" />
+  <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" height="35" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" height="35" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" height="35" />
+  <br><br>
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" height="35" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" height="35" />
+  <img src="https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white" height="35" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" height="35" />
+</div>
+
+---
+
+### 🚀 Engenharia de Software Aplicada: Projetos em Destaque
+
+#### ⚡ [Vitta AI — Terminal Inteligente de Trading & Análise Financeira](https://github.com/RennaN-C/Vitta-AI)
+Um ecossistema completo focado no consumo analítico de dados da B3 integrado a pipelines inteligentes de Inteligência Artificial.
+* **Arquitetura Multi-LLM:** Orquestração assíncrona de modelos de linguagem baseada na definição estrita de papéis (personas dinâmicas), implementando chamadas paralelas onde um modelo atua na análise e outro audita a qualidade da resposta.
+* **Segurança Avançada (Guardrails):** Desenvolvimento de uma camada nativa de segurança no servidor via Regex para mitigar vulnerabilidades de *Prompt Injection* e garantir a integridade do backend.
+* **UX & Modo Privacidade:** Implementação de um estado de privacidade global no frontend que intercepta os dados da API em tempo real, ocultando gráficos do Recharts e convertendo saldos numéricos confidenciais em uma máscara segura (`••••••`).
+* **Infraestrutura Impecável:** Todo o ecossistema — client, server e banco de dados — encontra-se totalmente isolado, configurado e orquestrado em rede local utilizando **Docker** e **Docker Compose**.
+* *Stack:* React, Vite, FastAPI (Python), PostgreSQL, Docker, Docker Compose.
+
+
+### 📊 Métricas de Desenvolvimento & Estatísticas
+
+<div align="left">
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=RennaN-C&show_icons=true&theme=tokyonight&count_private=true" alt="Estatísticas do GitHub" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RennaN-C&layout=compact&theme=tokyonight&langs_count=6" alt="Linguagens Mais Utilizadas" />
+</div>
+
+---
+
+### 🤝 Vamos impulsionar soluções juntos?
+* **LinkedIn:** [Acesse meu perfil profissional](www.linkedin.com/in/rennan-deoliveiracardoso)
