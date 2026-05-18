@@ -47,8 +47,8 @@ Um ecossistema completo focado no consumo analítico de dados da B3 integrado a 
 ### 📊 Métricas de Desenvolvimento & Estatísticas
 
 <div align="left">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=RennaN-C&show_icons=true&theme=tokyonight&count_private=true" alt="Estatísticas do GitHub" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=RennaN-C&layout=compact&theme=tokyonight&langs_count=6" alt="Linguagens Mais Utilizadas" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=rennan-c&show_icons=true&theme=tokyonight&count_private=true" alt="Estatísticas do GitHub" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rennan-c&layout=compact&theme=tokyonight&langs_count=6" alt="Linguagens Mais Utilizadas" />
 </div>
 
 ---
