@@ -44,11 +44,12 @@ Um ecossistema completo focado no consumo analítico de dados da B3 integrado a 
 * *Stack:* React, Vite, FastAPI (Python), PostgreSQL, Docker, Docker Compose.
 
 
-### 📊 Métricas de Desenvolvimento & Estatísticas
+### 📊 Métricas & Atividade no ecossistema
 
 <div align="left">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=rennan-c&show_icons=true&theme=tokyonight&count_private=true" alt="Estatísticas do GitHub" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rennan-c&layout=compact&theme=tokyonight&langs_count=6" alt="Linguagens Mais Utilizadas" />
+  <img src="https://img.shields.io/github/followers/RennaN-C?label=Seguidores&style=for-the-badge&color=00f2aa" height="35" />
+  <img src="https://img.shields.io/github/stars/RennaN-C/Vitta-AI?label=Vitta%20AI%20Stars&style=for-the-badge&color=00f2aa" height="35" />
+  <img src="https://img.shields.io/github/repo-size/RennaN-C/Vitta-AI?label=Tamanho%20do%20Vitta%20AI&style=for-the-badge&color=161b22" height="35" />
 </div>
 
 ---
