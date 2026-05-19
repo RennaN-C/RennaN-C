@@ -1,4 +1,4 @@
-# Olá, eu sou o Rennan! 👋
+# Olá, meu nome é Rennan e é um prazer que você saiba um pouco mais sobre mim! 👋
 
 <div align="left">
   <img src="https://img.shields.io/badge/Status-Buscando%20Estágio%20em%20Engenharia%20de%20Software-00f2aa?style=for-the-badge&logoWidth=40" alt="Status">
