@@ -55,4 +55,4 @@ Um ecossistema completo focado no consumo analítico de dados da B3 integrado a 
 ---
 
 ### 🤝 Vamos impulsionar soluções juntos?
-* **LinkedIn:** [Acesse meu perfil profissional](www.linkedin.com/in/rennan-deoliveiracardoso)
+* **LinkedIn:** [Acesse meu perfil profissional](https://www.linkedin.com/in/rennan-deoliveiracardoso/)
