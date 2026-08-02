@@ -1,7 +1,7 @@
 <div align="center">
 
 <div align="center">
-  <img src="./rennan-cardoso.png"
+  <img src="./banner.png"
        alt="Rennan Cardoso | Software Developer"
        width="100%">
 </div>
