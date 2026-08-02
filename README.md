@@ -64,13 +64,6 @@ Também gosto de explorar novas tecnologias, desenvolver projetos pessoais e aca
 
 ━━━━━━━━━━━━━━━━━━━━ ◈ ━━━━━━━━━━━━━━━━━━━━
 
-## GITHUB ANALYTICS
-
-<br>
-
-
-<br><br>
-
 <img width="65%" src="https://streak-stats.demolab.com?user=RennaN-C&hide_border=false&border=FFFFFF&background=000000&ring=FFFFFF&fire=FFFFFF&currStreakLabel=FFFFFF&sideLabels=FFFFFF&dates=AAAAAA&currStreakNum=FFFFFF&sideNums=FFFFFF&locale=pt_BR" alt="Sequência de contribuições"/>
 
 <br><br>
