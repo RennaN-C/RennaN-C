@@ -64,7 +64,10 @@ Também gosto de explorar novas tecnologias, desenvolver projetos pessoais e aca
 
 ━━━━━━━━━━━━━━━━━━━━ ◈ ━━━━━━━━━━━━━━━━━━━━
 
-<img width="65%" src="https://streak-stats.demolab.com?user=RennaN-C&hide_border=false&border=FFFFFF&background=000000&ring=FFFFFF&fire=FFFFFF&currStreakLabel=FFFFFF&sideLabels=FFFFFF&dates=AAAAAA&currStreakNum=FFFFFF&sideNums=FFFFFF&locale=pt_BR" alt="Sequência de contribuições"/>
+ <img
+    src="https://github-readme-streak-stats-eight.vercel.app/?user=RennaN-C&theme=dark&hide_border=true"
+    alt="Sequência de contribuições"
+  />
 
 <br><br>
 
