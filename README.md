@@ -71,6 +71,5 @@ Também gosto de explorar novas tecnologias, desenvolver projetos pessoais e aca
 
 <br><br>
 
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=RennaN-C&bg_color=000000&color=FFFFFF&line=FFFFFF&point=FFFFFF&area=true&area_color=333333&hide_border=false&border_color=FFFFFF&custom_title=Contribution%20Activity" alt="Gráfico de contribuições"/>
 
 </div>
