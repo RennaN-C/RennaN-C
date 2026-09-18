@@ -6,70 +6,68 @@
        width="100%">
 </div>
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com/?font=Poppins&weight=600&size=28&duration=3000&pause=1000&color=000000&center=true&vCenter=true&width=850&lines=Desenvolvedor+de+Software;Estudante+de+Engenharia+de+Software;Back-End+%7C+APIs+%7C+Banco+de+Dados;Construindo+solu%C3%A7%C3%B5es+e+evoluindo+todos+os+dias" />
+</p>
 
-<br>
+<p align="center">
+  <a href="https://www.linkedin.com/in/rennan-deoliveiracardoso/">
+    <img src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
 
-[![LinkedIn](https://img.shields.io/badge/LINKEDIN-000000?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rennan-deoliveiracardoso/)
-[![GitHub](https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/RennaN-C)
+  <a href="https://github.com/RennaN-C">
+    <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+</p>
 
+## 👨🏻‍💻 Sobre mim
 
+* 💼 Desenvolvedor de Software Trainee na **WLE Soluções em Software**
+* 🎓 Estudante de **Engenharia de Software**
+* 🚀 Interesse em desenvolvimento Back-End, APIs e bancos de dados
+* 🧠 Sempre buscando melhorar arquitetura, organização e qualidade de software
+* 🔧 Experiência com desenvolvimento e manutenção de sistemas empresariais
+* 📚 Formação prevista para **2027**
 
-━━━━━━━━━━━━━━━━━━━━ ◈ ━━━━━━━━━━━━━━━━━━━━
+## 🚀 Tecnologias
 
-## SOBRE MIM
+### Linguagens
 
-</div>
+<p>
+  <img src="https://skillicons.dev/icons?i=python,js,ts" />
+</p>
 
-Sou estudante de **Engenharia de Software**, com formação prevista para **2027**, e atualmente atuo como **Desenvolvedor de Software Trainee na WLE Soluções em Software**.
+![Delphi](https://img.shields.io/badge/Delphi-000000?style=for-the-badge\&logo=delphi\&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-000000?style=for-the-badge\&logo=postgresql\&logoColor=white)
 
-Sou um entusiasta de tecnologia que gosta de entender como os sistemas funcionam e transformar ideias em soluções práticas de software.
+### Back-End
 
-Também gosto de explorar novas tecnologias, desenvolver projetos pessoais e acadêmicos, organizar fluxos de desenvolvimento e melhorar continuamente a qualidade do software que crio.
+<p>
+  <img src="https://skillicons.dev/icons?i=fastapi,nodejs,express,postgres" />
+</p>
+
+### Front-End
+
+<p>
+  <img src="https://skillicons.dev/icons?i=react,html,css" />
+</p>
+
+### Ferramentas
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,docker,vscode" />
+</p>
+
+## 🔥 Streak
+
+<p align="center">
+  <img src="https://github-readme-streak-stats-eight.vercel.app/?user=RennaN-C&theme=dark&hide_border=true" />
+</p>
 
 <div align="center">
 
-<br>
+### ⭐!
 
-━━━━━━━━━━━━━━━━━━━━ ◈ ━━━━━━━━━━━━━━━━━━━━
-
-## LINGUAGENS
-
-<br>
-
-![Delphi](https://img.shields.io/badge/DELPHI-000000?style=for-the-badge&logo=delphi&logoColor=white)
-![Python](https://img.shields.io/badge/PYTHON-000000?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JAVASCRIPT-000000?style=for-the-badge&logo=javascript&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=postgresql&logoColor=white)
-
-<br><br>
-
-━━━━━━━━━━━━━━━━━━━━ ◈ ━━━━━━━━━━━━━━━━━━━━
-
-## TECNOLOGIAS E FERRAMENTAS
-
-<br>
-
-![FastAPI](https://img.shields.io/badge/FASTAPI-000000?style=for-the-badge&logo=fastapi&logoColor=white)
-![React](https://img.shields.io/badge/REACT-000000?style=for-the-badge&logo=react&logoColor=white)
-![Node.js](https://img.shields.io/badge/NODE.JS-000000?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/POSTGRESQL-000000?style=for-the-badge&logo=postgresql&logoColor=white)
-
-<br>
-
-![Docker](https://img.shields.io/badge/DOCKER-000000?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/GIT-000000?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GITHUB-000000?style=for-the-badge&logo=github&logoColor=white)
-
-<br>
-
-━━━━━━━━━━━━━━━━━━━━ ◈ ━━━━━━━━━━━━━━━━━━━━
-
- <img
-    src="https://github-readme-streak-stats-eight.vercel.app/?user=RennaN-C&theme=dark&hide_border=true"
-    alt="Sequência de contribuições"
-  />
-
-<br><br>
-
+<img src="https://komarev.com/ghpvc/?username=RennaN-C&color=000000&style=for-the-badge&label=PROFILE+VIEWS" />
 
 </div>
