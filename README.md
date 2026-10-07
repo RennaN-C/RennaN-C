@@ -112,14 +112,14 @@
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://github-stats-extended.vercel.app/api?username=RennaN-C&show_icons=true&hide_border=true&bg_color=00000000&title_color=FFFFFF&text_color=CCCCCC&icon_color=FFFFFF"
+      srcset="https://github-stats-extended.vercel.app/api?username=RennaN-C&show_icons=true&include_all_commits=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&show=reviews,prs_merged,prs_merged_percentage,prs_authored,prs_reviewed,issues_authored&number_format=long&locale=pt-br&hide_border=true&bg_color=00000000&title_color=FFFFFF&text_color=CCCCCC&icon_color=FFFFFF&ring_color=FFFFFF"
     />
     <source
       media="(prefers-color-scheme: light)"
-      srcset="https://github-stats-extended.vercel.app/api?username=RennaN-C&show_icons=true&hide_border=true&bg_color=00000000&title_color=000000&text_color=333333&icon_color=000000"
+      srcset="https://github-stats-extended.vercel.app/api?username=RennaN-C&show_icons=true&include_all_commits=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&show=reviews,prs_merged,prs_merged_percentage,prs_authored,prs_reviewed,issues_authored&number_format=long&locale=pt-br&hide_border=true&bg_color=00000000&title_color=000000&text_color=333333&icon_color=000000&ring_color=000000"
     />
     <img
-      src="https://github-stats-extended.vercel.app/api?username=RennaN-C&show_icons=true&hide_border=true"
+      src="https://github-stats-extended.vercel.app/api?username=RennaN-C&show_icons=true&include_all_commits=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR&show=reviews,prs_merged,prs_merged_percentage,prs_authored,prs_reviewed,issues_authored&number_format=long&locale=pt-br&hide_border=true"
       alt="GitHub Stats"
     />
   </picture>
@@ -133,14 +133,14 @@
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
-      srcset="https://github-readme-streak-stats-eight.vercel.app/?user=RennaN-C&theme=dark&hide_border=true"
+      srcset="https://streak-stats.demolab.com/?user=RennaN-C&theme=dark&hide_border=true&locale=pt_BR&timezone=America%2FSao_Paulo&short_numbers=false"
     />
     <source
       media="(prefers-color-scheme: light)"
-      srcset="https://github-readme-streak-stats-eight.vercel.app/?user=RennaN-C&theme=default&hide_border=true"
+      srcset="https://streak-stats.demolab.com/?user=RennaN-C&theme=default&hide_border=true&locale=pt_BR&timezone=America%2FSao_Paulo&short_numbers=false"
     />
     <img
-      src="https://github-readme-streak-stats-eight.vercel.app/?user=RennaN-C&hide_border=true"
+      src="https://streak-stats.demolab.com/?user=RennaN-C&hide_border=true&locale=pt_BR&timezone=America%2FSao_Paulo&short_numbers=false"
       alt="GitHub Streak"
     />
   </picture>
