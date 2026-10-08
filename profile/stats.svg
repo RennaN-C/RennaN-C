@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Rennan de Oliveira Cardoso&#39;s GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Stars Earned: 1, Total Commits  : 790, Total PRs: 157, Total PRs Merged: 153, Merged PRs Percentage: 97.45, Total PRs Reviewed: 8, Total Issues: 158, PRs Created: 157, PRs Reviewed: 2, Issues Created: 158, Contributed to (last year): 0</desc>
+        <desc id="descId">Total Stars Earned: 1, Total Commits  : 792, Total PRs: 157, Total PRs Merged: 153, Merged PRs Percentage: 97.45, Total PRs Reviewed: 8, Total Issues: 158, PRs Created: 157, PRs Reviewed: 2, Issues Created: 158, Contributed to (last year): 0</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -66,7 +66,7 @@
       transform-origin: -10px 8px;
       transform: rotate(-90deg);
       stroke-dashoffset: 251.32741228718345;
-      animation: rankAnimation 2s ease-in-out 3.6s forwards, rankBreath 3.8s ease-in-out 5.7s infinite;
+      animation: rankAnimation 2s ease-in-out 3.6s forwards, rankBreath 3.8s ease-in-out 6.15s infinite;
     }
     
     @keyframes rankAnimation {
@@ -74,7 +74,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 136.00149818968487;
+        stroke-dashoffset: 135.96793761614205;
       }
     }
   
@@ -101,41 +101,42 @@
       }
     
           
-        /* Traço da letra -> preenchimento -> símbolo + -> anel da nota */
-.rank-letter-outline {
+        /* O rank é desenhado por paths reais, não por texto mascarado. */
+.rank-glyph-outline, .rank-suffix-outline {
   fill: none;
-  stroke: #F5F7FA;
-  stroke-width: 1.55px;
+  stroke: #67E8F9;
+  stroke-width: 110;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-dasharray: 180;
-  stroke-dashoffset: 180;
-  animation: rankLetterTrace 2.85s ease-in-out forwards;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
 }
-.rank-letter-fill {
+.rank-glyph-outline {
+  animation: rankVectorDraw 2.8s ease-in-out 0.15s forwards,
+             rankOutlineFade 0.32s ease-out 2.85s forwards;
+}
+.rank-glyph-fill {
   fill: #F5F7FA;
   opacity: 0;
-  animation: rankLetterFill 0.38s ease-out 2.7s forwards;
+  animation: rankVectorFill 0.32s ease-out 2.83s forwards;
 }
-.rank-plus-placeholder {
-  fill: none;
-  stroke: none;
+.rank-suffix-outline {
+  animation: rankVectorDraw 0.62s ease-in-out 3.06s forwards,
+             rankOutlineFade 0.22s ease-out 3.64s forwards;
 }
-.rank-plus {
+.rank-suffix-fill {
+  fill: #F5F7FA;
   opacity: 0;
-  animation: rankPlusAppear 0.34s ease-out 3.13s forwards;
+  animation: rankVectorFill 0.2s ease-out 3.64s forwards;
 }
-@keyframes rankLetterTrace {
-  from { stroke-dashoffset: 180; }
+@keyframes rankVectorDraw {
   to { stroke-dashoffset: 0; }
 }
-@keyframes rankLetterFill {
-  from { opacity: 0; }
+@keyframes rankVectorFill {
   to { opacity: 1; }
 }
-@keyframes rankPlusAppear {
-  from { opacity: 0; }
-  to { opacity: 1; }
+@keyframes rankOutlineFade {
+  to { opacity: 0; }
 }
 @keyframes rankBreath {
   0%, 100% { opacity: 0.8; }
@@ -144,13 +145,13 @@
 @media (prefers-reduced-motion: reduce) {
   .rank-circle {
     animation: none !important;
-    stroke-dashoffset: 136.00149818968487 !important;
+    stroke-dashoffset: 135.96793761614205 !important;
     opacity: 0.85 !important;
   }
-  .rank-letter-outline {
+  .rank-glyph-outline, .rank-suffix-outline {
     display: none !important;
   }
-  .rank-letter-fill, .rank-plus {
+  .rank-glyph-fill, .rank-suffix-fill {
     animation: none !important;
     opacity: 1 !important;
   }
@@ -202,12 +203,7 @@
           transform="translate(418.5, 122.5)">
         <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
         <circle class="rank-circle" cx="-10" cy="8" r="40" />
-        <g class="rank-text">
-          
-        <text class="rank-letter-outline" aria-hidden="true" x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" >B</text>
-          <text class="rank-letter-fill" x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">B</text>
-      
-        </g>
+        <g class="rank-text" data-testid="level-rank-icon" aria-label="Rank B"><g transform="translate(-19.9087 16) scale(0.01269531 -0.01269531)"><path class="rank-glyph-outline" d="M786 915Q877 915 924 955Q971 995 971 1073Q971 1150 924 1190.5Q877 1231 786 1231H573V915ZM799 262Q915 262 973.5 311Q1032 360 1032 459Q1032 556 974 604.5Q916 653 799 653H573V262ZM1157 799Q1281 763 1349 666Q1417 569 1417 428Q1417 212 1271 106Q1125 0 827 0H188V1493H766Q1077 1493 1216.5 1399Q1356 1305 1356 1098Q1356 989 1305 912.5Q1254 836 1157 799Z" pathLength="100" /><path class="rank-glyph-fill" d="M786 915Q877 915 924 955Q971 995 971 1073Q971 1150 924 1190.5Q877 1231 786 1231H573V915ZM799 262Q915 262 973.5 311Q1032 360 1032 459Q1032 556 974 604.5Q916 653 799 653H573V262ZM1157 799Q1281 763 1349 666Q1417 569 1417 428Q1417 212 1271 106Q1125 0 827 0H188V1493H766Q1077 1493 1216.5 1399Q1356 1305 1356 1098Q1356 989 1305 912.5Q1254 836 1157 799Z" /></g></g>
       </g>
     <svg x="0" y="0">
       <g transform="translate(0, 0)">
@@ -238,7 +234,7 @@
         x="224.01"
         y="12.5"
         data-testid="commits"
-      >790</text>
+      >792</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
