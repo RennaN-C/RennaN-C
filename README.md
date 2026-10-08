@@ -1,7 +1,7 @@
 <div align="center">
   <img
-    src="./banner.png"
-    alt="Rennan Cardoso | Software Developer"
+    src="./banner-v2.svg"
+    alt="Rennan Cardoso | Software Developer — banner grafite, branco e azul"
     width="100%"
   >
 </div>
@@ -28,21 +28,21 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/rennan-deoliveiracardoso/">
     <img
-      src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=white"
+      src="https://img.shields.io/badge/LinkedIn-101820?style=for-the-badge&logo=linkedin&logoColor=58A6FF"
       alt="LinkedIn"
     />
   </a>
 
   <a href="https://github.com/RennaN-C">
     <img
-      src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white"
+      src="https://img.shields.io/badge/GitHub-101820?style=for-the-badge&logo=github&logoColor=58A6FF"
       alt="GitHub"
     />
   </a>
 
   <a href="https://www.instagram.com/rennan.cds/">
     <img
-      src="https://img.shields.io/badge/Instagram-000000?style=for-the-badge&logo=instagram&logoColor=white"
+      src="https://img.shields.io/badge/Instagram-101820?style=for-the-badge&logo=instagram&logoColor=FFFFFF"
       alt="Instagram"
     />
   </a>
@@ -66,42 +66,42 @@
 ### Linguagens
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-000000?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Delphi-000000?style=for-the-badge&logo=delphi&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-000000?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-101820?style=for-the-badge&logo=python&logoColor=58A6FF" />
+  <img src="https://img.shields.io/badge/JavaScript-101820?style=for-the-badge&logo=javascript&logoColor=FFFFFF" />
+  <img src="https://img.shields.io/badge/TypeScript-101820?style=for-the-badge&logo=typescript&logoColor=58A6FF" />
+  <img src="https://img.shields.io/badge/Delphi-101820?style=for-the-badge&logo=delphi&logoColor=FFFFFF" />
+  <img src="https://img.shields.io/badge/SQL-101820?style=for-the-badge" />
 </p>
 
 ### Back-End e APIs
 
 <p align="left">
-  <img src="https://img.shields.io/badge/FastAPI-000000?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-101820?style=for-the-badge&logo=fastapi&logoColor=67E8F9" />
+  <img src="https://img.shields.io/badge/Node.js-101820?style=for-the-badge&logo=nodedotjs&logoColor=FFFFFF" />
+  <img src="https://img.shields.io/badge/Express.js-101820?style=for-the-badge&logo=express&logoColor=FFFFFF" />
 </p>
 
 ### Front-End
 
 <p align="left">
-  <img src="https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-101820?style=for-the-badge&logo=react&logoColor=67E8F9" />
+  <img src="https://img.shields.io/badge/HTML5-101820?style=for-the-badge&logo=html5&logoColor=FFFFFF" />
+  <img src="https://img.shields.io/badge/CSS3-101820?style=for-the-badge&logo=css&logoColor=FFFFFF" />
 </p>
 
 ### Banco de Dados
 
 <p align="left">
-  <img src="https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-101820?style=for-the-badge&logo=postgresql&logoColor=58A6FF" />
 </p>
 
 ### Ferramentas e DevOps
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/VS_Code-000000?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-101820?style=for-the-badge&logo=git&logoColor=FFFFFF" />
+  <img src="https://img.shields.io/badge/GitHub-101820?style=for-the-badge&logo=github&logoColor=58A6FF" />
+  <img src="https://img.shields.io/badge/Docker-101820?style=for-the-badge&logo=docker&logoColor=58A6FF" />
+  <img src="https://img.shields.io/badge/VS_Code-101820?style=for-the-badge&logo=visualstudiocode&logoColor=FFFFFF" />
 </p>
 
 <br>
@@ -129,7 +129,7 @@
 
 <p align="center">
   <img
-    src="https://komarev.com/ghpvc/?username=RennaN-C&color=000000&style=for-the-badge&label=PROFILE+VIEWS"
+    src="https://komarev.com/ghpvc/?username=RennaN-C&color=58A6FF&style=for-the-badge&label=PROFILE+VIEWS"
     alt="Profile Views"
   />
 </p>
