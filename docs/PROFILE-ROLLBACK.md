@@ -25,7 +25,7 @@ git restore --source backup/profile-before-identity-refresh-2026-10-08 -- \
   profile/stats.svg \
   profile/streak.svg
 
-git rm banner-v2.svg
+git rm banner-v2.svg docs/PROFILE-ROLLBACK.md
 git add -A
 git commit -m "revert: restore profile appearance before identity refresh"
 git push origin main
