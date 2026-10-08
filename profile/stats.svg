@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Rennan de Oliveira Cardoso&#39;s GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Stars Earned: 1, Total Commits  : 789, Total PRs: 156, Total PRs Merged: 152, Merged PRs Percentage: 97.44, Total PRs Reviewed: 8, Total Issues: 158, PRs Created: 156, PRs Reviewed: 2, Issues Created: 158, Contributed to (last year): 0</desc>
+        <desc id="descId">Total Stars Earned: 1, Total Commits  : 790, Total PRs: 156, Total PRs Merged: 152, Merged PRs Percentage: 97.44, Total PRs Reviewed: 8, Total Issues: 158, PRs Created: 156, PRs Reviewed: 2, Issues Created: 158, Contributed to (last year): 0</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -34,7 +34,7 @@
     }
     .rank-text {
       font: 800 24px 'Segoe UI', Ubuntu, Sans-Serif; fill: #F5F7FA;
-      animation: scaleInAnimation 0.3s ease-in-out forwards;
+      animation: none;
     }
     .rank-percentile-header {
       font-size: 14px;
@@ -65,7 +65,8 @@
       opacity: 0.8;
       transform-origin: -10px 8px;
       transform: rotate(-90deg);
-      animation: rankAnimation 1s forwards ease-in-out, rankBreath 3.8s ease-in-out 1.2s infinite;
+      stroke-dashoffset: 251.32741228718345;
+      animation: rankAnimation 2s ease-in-out 3.6s forwards, rankBreath 3.8s ease-in-out 5.7s infinite;
     }
     
     @keyframes rankAnimation {
@@ -73,7 +74,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 136.11779406081013;
+        stroke-dashoffset: 136.10099631916174;
       }
     }
   
@@ -100,12 +101,59 @@
       }
     
           
-        @keyframes rankBreath {
+        /* Traço da letra -> preenchimento -> símbolo + -> anel da nota */
+.rank-letter-outline {
+  fill: none;
+  stroke: #F5F7FA;
+  stroke-width: 1.55px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 180;
+  stroke-dashoffset: 180;
+  animation: rankLetterTrace 2.85s ease-in-out forwards;
+}
+.rank-letter-fill {
+  fill: #F5F7FA;
+  opacity: 0;
+  animation: rankLetterFill 0.38s ease-out 2.7s forwards;
+}
+.rank-plus-placeholder {
+  fill: none;
+  stroke: none;
+}
+.rank-plus {
+  opacity: 0;
+  animation: rankPlusAppear 0.34s ease-out 3.13s forwards;
+}
+@keyframes rankLetterTrace {
+  from { stroke-dashoffset: 180; }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes rankLetterFill {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes rankPlusAppear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes rankBreath {
   0%, 100% { opacity: 0.8; }
   50% { opacity: 1; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .rank-circle { animation: rankAnimation 0.01s forwards ease-in-out !important; }
+  .rank-circle {
+    animation: none !important;
+    stroke-dashoffset: 136.10099631916174 !important;
+    opacity: 0.85 !important;
+  }
+  .rank-letter-outline {
+    display: none !important;
+  }
+  .rank-letter-fill, .rank-plus {
+    animation: none !important;
+    opacity: 1 !important;
+  }
 }
 </style>
 
@@ -156,9 +204,8 @@
         <circle class="rank-circle" cx="-10" cy="8" r="40" />
         <g class="rank-text">
           
-        <text x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
-          B
-        </text>
+        <text class="rank-letter-outline" aria-hidden="true" x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" >B</text>
+          <text class="rank-letter-fill" x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">B</text>
       
         </g>
       </g>
@@ -191,7 +238,7 @@
         x="224.01"
         y="12.5"
         data-testid="commits"
-      >789</text>
+      >790</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
