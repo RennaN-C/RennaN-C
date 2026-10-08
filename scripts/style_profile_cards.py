@@ -89,6 +89,12 @@ ring_final = end_offset.group(1)
 stats = animate_rank_letter(stats)
 stats = replace_exact(
     stats,
+    "stroke-dasharray: 250;",
+    "stroke-dasharray: 251.32741228718345;",
+    "Rank: hide initial circle segment",
+)
+stats = replace_exact(
+    stats,
     "animation: scaleInAnimation 0.3s ease-in-out forwards;",
     "animation: none;",
     "Rank: desativar zoom rápido padrão",
@@ -98,8 +104,8 @@ stats = replace_exact(
     "animation: rankAnimation 1s forwards ease-in-out;",
     (
         "stroke-dashoffset: 251.32741228718345;\n"
-        "      animation: rankAnimation 2s ease-in-out 3.6s forwards, "
-        "rankBreath 3.8s ease-in-out 6.15s infinite;"
+        "      animation: rankAnimation 2.1s ease-in-out 4.05s forwards, "
+        "rankBreath 3.8s ease-in-out 6.35s infinite;"
     ),
     "Rank: anel somente depois da letra",
 )
