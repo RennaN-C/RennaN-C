@@ -50,14 +50,14 @@
 
 <br>
 
-## 👨🏻‍💻 Sobre mim
+## <img src="./assets/icons/user-round.svg" width="22" height="22" alt="" /> Sobre mim
 
-- 💼 Desenvolvedor de Software Trainee na **WLE Soluções em Software**
-- 🎓 Estudante de **Engenharia de Software**
-- 🚀 Interesse em desenvolvimento Back-End, APIs e bancos de dados
-- 🧠 Sempre buscando melhorar arquitetura, organização e qualidade de software
-- 🔧 Experiência com desenvolvimento e manutenção de sistemas empresariais
-- 📚 Formação prevista para **2027**
+- <img src="./assets/icons/briefcase-business.svg" width="18" height="18" alt="" /> Desenvolvedor de Software Trainee na **WLE Soluções em Software**
+- <img src="./assets/icons/graduation-cap.svg" width="18" height="18" alt="" /> Estudante de **Engenharia de Software**
+- <img src="./assets/icons/code-xml.svg" width="18" height="18" alt="" /> Foco em desenvolvimento **Back-End, APIs e bancos de dados**
+- <img src="./assets/icons/network.svg" width="18" height="18" alt="" /> Interesse em **arquitetura, organização e qualidade de software**
+- <img src="./assets/icons/layers.svg" width="18" height="18" alt="" /> Experiência com **desenvolvimento e manutenção de sistemas empresariais**
+- <img src="./assets/icons/calendar-check.svg" width="18" height="18" alt="" /> Formação prevista para **2027**
 
 <br>
 
@@ -107,7 +107,7 @@
 <br>
 
 
-<h2 align="center">📊 GitHub Stats</h2>
+<h2 align="center">📈 GitHub Performance</h2>
 <p align="center">
   <img
     src="./profile/stats.svg"
@@ -117,7 +117,7 @@
 
 <br>
 
-<h2 align="center">🔥 Streak</h2>
+<h2 align="center">⚡ Coding Consistency</h2>
 <p align="center">
   <img
     src="./profile/streak.svg"
