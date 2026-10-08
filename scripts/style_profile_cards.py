@@ -59,8 +59,8 @@ streak = replace_exact(
 )
 streak = replace_exact(
     streak,
-    "animation: fadein 0.5s linear forwards 0.6s'",
-    "animation: fadein 0.5s linear forwards 0.6s, fireBreath 3.2s ease-in-out 1.5s infinite'",
+    "<g id='profile-streak-fire' transform='translate(247.5, 19.5)' stroke-opacity='0' style='opacity: 0; animation: fadein 0.5s linear forwards 0.6s'>",
+    "<g id='profile-streak-fire' transform='translate(247.5, 19.5)' stroke-opacity='0' style='opacity: 0; animation: fadein 0.5s linear forwards 0.6s, fireBreath 3.2s ease-in-out 1.5s infinite'>",
     "Streak: pulso da chama",
 )
 streak = replace_exact(
