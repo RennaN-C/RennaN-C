@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Rennan de Oliveira Cardoso&#39;s GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Commits  : 795, Total PRs: 158, Total PRs Merged: 154, Merged PRs Percentage: 97.47, Total PRs Reviewed: 8, Total Issues: 158</desc>
+        <desc id="descId">Total Commits  : 795, Total PRs: 159, Total PRs Merged: 155, Merged PRs Percentage: 97.48, Total PRs Reviewed: 8, Total Issues: 158</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -74,7 +74,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 135.8195555999962;
+        stroke-dashoffset: 135.72277825210224;
       }
     }
   
@@ -145,7 +145,7 @@
 @media (prefers-reduced-motion: reduce) {
   .rank-circle {
     animation: none !important;
-    stroke-dashoffset: 135.8195555999962 !important;
+    stroke-dashoffset: 135.72277825210224 !important;
     opacity: 0.85 !important;
   }
   .rank-glyph-outline, .rank-suffix-outline {
@@ -234,7 +234,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs"
-      >158</text>
+      >159</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -249,7 +249,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs_merged"
-      >154</text>
+      >155</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -264,7 +264,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs_merged_percentage"
-      >97.47 %</text>
+      >97.48 %</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
