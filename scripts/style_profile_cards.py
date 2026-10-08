@@ -16,10 +16,21 @@ def replace_exact(content: str, before: str, after: str, label: str) -> str:
     return content.replace(before, after, 1)
 
 
+# Contornos vetoriais em unidades normalizadas de DejaVu Sans Bold (licença livre).
+# São apenas traços dos caracteres usados nas notas: C, B, A, S, + e -.
+# Não há arquivo de fonte nem dependência adicional no workflow.
+RANK_GLYPHS = {
+    "S": (1475, "M1227 1446V1130Q1104 1185 987 1213Q870 1241 766 1241Q628 1241 562 1203Q496 1165 496 1085Q496 1025 540.5 991.5Q585 958 702 934L866 901Q1115 851 1220 749Q1325 647 1325 459Q1325 212 1178.5 91.5Q1032 -29 731 -29Q589 -29 446 -2Q303 25 160 78V403Q303 327 436.5 288.5Q570 250 694 250Q820 250 887 292Q954 334 954 412Q954 482 908.5 520Q863 558 727 588L578 621Q354 669 250.5 774Q147 879 147 1057Q147 1280 291 1400Q435 1520 705 1520Q828 1520 958 1501.5Q1088 1483 1227 1446Z"),
+    "A": (1585, "M1094 272H492L397 0H10L563 1493H1022L1575 0H1188ZM588 549H997L793 1143Z"),
+    "B": (1561, "M786 915Q877 915 924 955Q971 995 971 1073Q971 1150 924 1190.5Q877 1231 786 1231H573V915ZM799 262Q915 262 973.5 311Q1032 360 1032 459Q1032 556 974 604.5Q916 653 799 653H573V262ZM1157 799Q1281 763 1349 666Q1417 569 1417 428Q1417 212 1271 106Q1125 0 827 0H188V1493H766Q1077 1493 1216.5 1399Q1356 1305 1356 1098Q1356 989 1305 912.5Q1254 836 1157 799Z"),
+    "C": (1503, "M1372 82Q1266 27 1151 -1Q1036 -29 911 -29Q538 -29 320 179.5Q102 388 102 745Q102 1103 320 1311.5Q538 1520 911 1520Q1036 1520 1151 1492Q1266 1464 1372 1409V1100Q1265 1173 1161 1207Q1057 1241 942 1241Q736 1241 618 1109Q500 977 500 745Q500 514 618 382Q736 250 942 250Q1057 250 1161 284Q1265 318 1372 391Z"),
+    "+": (1716, "M977 1284V760H1499V524H977V0H739V524H217V760H739V1284Z"),
+    "-": (850, "M111 735H739V444H111Z"),
+}
+
+
 def animate_rank_letter(content: str) -> str:
-    """Desenha primeiro a letra; revela o + (se houver) e depois o anel."""
-    # O gerador coloca o rank dentro de <g class="rank-text">,
-    # não diretamente numa tag <text class="rank-text">.
+    """Transforma o texto do rank em paths; a letra é desenhada antes do anel."""
     pattern = re.compile(
         r'(?P<open><g class="rank-text">\s*)'
         r'(?P<text_open><text\b[^>]*\bdata-testid="level-rank-icon"[^>]*>)'
@@ -30,40 +41,35 @@ def animate_rank_letter(content: str) -> str:
     )
     match = pattern.search(content)
     if not match:
-        raise ValueError("Rank: estrutura esperada não encontrada no SVG gerado")
+        raise ValueError("Rank: estrutura de texto esperada não encontrada")
 
     rank = match.group("rank").strip()
-    if not re.fullmatch(r"[A-Z][+-]?", rank):
-        raise ValueError(f"Rank inesperado: {rank!r}")
+    if not re.fullmatch(r"[SABC][+-]?", rank):
+        raise ValueError(f"Rank não suportado: {rank!r}")
 
-    base, has_plus = (rank[:-1], True) if rank.endswith("+") else (rank, False)
-    outline_label = (
-        f'{base}<tspan class="rank-plus-placeholder">+</tspan>'
-        if has_plus else rank
-    )
-    final_label = (
-        f'{base}<tspan class="rank-plus">+</tspan>'
-        if has_plus else rank
-    )
+    scale = 26 / 2048
+    total = sum(RANK_GLYPHS[g][0] for g in rank)
+    left = -10 - (total * scale / 2)  # centralizado no anel atual
+    baseline = 16
+    groups = []
 
-    # Mantém as posições originais e o text-anchor do próprio gerador.
-    # O tspan transparente reserva a largura do + para alinhar os contornos.
-    text_open = match.group("text_open")
-    outline_open = (
-        text_open.replace(
-            "<text ", '<text class="rank-letter-outline" aria-hidden="true" ', 1
-        ).replace('data-testid="level-rank-icon"', "", 1)
+    for index, symbol in enumerate(rank):
+        advance, drawing = RANK_GLYPHS[symbol]
+        kind = "rank-glyph" if index == 0 else "rank-suffix"
+        groups.append(
+            f'<g transform="translate({left:.4f} {baseline}) '
+            f'scale({scale:.8f} -{scale:.8f})">'
+            f'<path class="{kind}-outline" d="{drawing}" pathLength="100" />'
+            f'<path class="{kind}-fill" d="{drawing}" />'
+            f'</g>'
+        )
+        left += advance * scale
+
+    rendered = (
+        f'<g class="rank-text" data-testid="level-rank-icon" '
+        f'aria-label="Rank {rank}">' + "".join(groups) + '</g>'
     )
-    filled_open = text_open.replace(
-        "<text ", '<text class="rank-letter-fill" ', 1
-    )
-    replacement = (
-        match.group("open")
-        + outline_open + outline_label + "</text>\n          "
-        + filled_open + final_label + "</text>"
-        + match.group("close")
-    )
-    return content[:match.start()] + replacement + content[match.end():]
+    return content[:match.start()] + rendered + content[match.end():]
 
 
 stats_path = Path("profile/stats.svg")
@@ -83,6 +89,12 @@ ring_final = end_offset.group(1)
 stats = animate_rank_letter(stats)
 stats = replace_exact(
     stats,
+    "stroke-dasharray: 250;",
+    "stroke-dasharray: 251.32741228718345;",
+    "Rank: hide initial circle segment",
+)
+stats = replace_exact(
+    stats,
     "animation: scaleInAnimation 0.3s ease-in-out forwards;",
     "animation: none;",
     "Rank: desativar zoom rápido padrão",
@@ -92,8 +104,8 @@ stats = replace_exact(
     "animation: rankAnimation 1s forwards ease-in-out;",
     (
         "stroke-dashoffset: 251.32741228718345;\n"
-        "      animation: rankAnimation 2s ease-in-out 3.6s forwards, "
-        "rankBreath 3.8s ease-in-out 5.7s infinite;"
+        "      animation: rankAnimation 2.1s ease-in-out 4.05s forwards, "
+        "rankBreath 3.8s ease-in-out 6.35s infinite;"
     ),
     "Rank: anel somente depois da letra",
 )
@@ -101,63 +113,65 @@ stats = replace_exact(
 stats = replace_exact(
     stats,
     "</style>",
-    f"""/* Traço da letra -> preenchimento -> símbolo + -> anel da nota */
-.rank-letter-outline {{
+    """/* O rank é desenhado por paths reais, não por texto mascarado. */
+.rank-glyph-outline, .rank-suffix-outline {
   fill: none;
-  stroke: #F5F7FA;
-  stroke-width: 1.55px;
+  stroke: #67E8F9;
+  stroke-width: 110;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-dasharray: 180;
-  stroke-dashoffset: 180;
-  animation: rankLetterTrace 2.85s ease-in-out forwards;
-}}
-.rank-letter-fill {{
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+}
+.rank-glyph-outline {
+  animation: rankVectorDraw 2.8s ease-in-out 0.15s forwards,
+             rankOutlineFade 0.32s ease-out 2.85s forwards;
+}
+.rank-glyph-fill {
   fill: #F5F7FA;
   opacity: 0;
-  animation: rankLetterFill 0.38s ease-out 2.7s forwards;
-}}
-.rank-plus-placeholder {{
-  fill: none;
-  stroke: none;
-}}
-.rank-plus {{
+  animation: rankVectorFill 0.32s ease-out 2.83s forwards;
+}
+.rank-suffix-outline {
+  animation: rankVectorDraw 0.62s ease-in-out 3.06s forwards,
+             rankOutlineFade 0.22s ease-out 3.64s forwards;
+}
+.rank-suffix-fill {
+  fill: #F5F7FA;
   opacity: 0;
-  animation: rankPlusAppear 0.34s ease-out 3.13s forwards;
-}}
-@keyframes rankLetterTrace {{
-  from {{ stroke-dashoffset: 180; }}
-  to {{ stroke-dashoffset: 0; }}
-}}
-@keyframes rankLetterFill {{
-  from {{ opacity: 0; }}
-  to {{ opacity: 1; }}
-}}
-@keyframes rankPlusAppear {{
-  from {{ opacity: 0; }}
-  to {{ opacity: 1; }}
-}}
-@keyframes rankBreath {{
-  0%, 100% {{ opacity: 0.8; }}
-  50% {{ opacity: 1; }}
-}}
-@media (prefers-reduced-motion: reduce) {{
-  .rank-circle {{
+  animation: rankVectorFill 0.2s ease-out 3.64s forwards;
+}
+@keyframes rankVectorDraw {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes rankVectorFill {
+  to { opacity: 1; }
+}
+@keyframes rankOutlineFade {
+  to { opacity: 0; }
+}
+@keyframes rankBreath {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rank-circle {
     animation: none !important;
-    stroke-dashoffset: {ring_final} !important;
+    stroke-dashoffset: __RING_FINAL__ !important;
     opacity: 0.85 !important;
-  }}
-  .rank-letter-outline {{
+  }
+  .rank-glyph-outline, .rank-suffix-outline {
     display: none !important;
-  }}
-  .rank-letter-fill, .rank-plus {{
+  }
+  .rank-glyph-fill, .rank-suffix-fill {
     animation: none !important;
     opacity: 1 !important;
-  }}
-}}
-</style>""",
-    "Rank: estilos e movimento reduzido",
+  }
+}
+</style>""".replace("__RING_FINAL__", ring_final),
+    "Rank: paths vetoriais, sequência e movimento reduzido",
 )
+
 stats_path.write_text(stats, encoding="utf-8")
 
 streak_path = Path("profile/streak.svg")
