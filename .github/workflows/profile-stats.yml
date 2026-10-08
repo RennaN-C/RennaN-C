@@ -8,6 +8,7 @@ on:
   push:
     paths:
       - ".github/workflows/profile-stats.yml"
+      - "scripts/style_profile_cards.py"
 
 permissions:
   contents: write
