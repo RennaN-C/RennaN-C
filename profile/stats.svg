@@ -58,7 +58,7 @@
     }
     .rank-circle {
       stroke: #58A6FF;
-      stroke-dasharray: 250;
+      stroke-dasharray: 251.32741228718345;
       fill: none;
       stroke-width: 6;
       stroke-linecap: round;
@@ -66,7 +66,7 @@
       transform-origin: -10px 8px;
       transform: rotate(-90deg);
       stroke-dashoffset: 251.32741228718345;
-      animation: rankAnimation 2s ease-in-out 3.6s forwards, rankBreath 3.8s ease-in-out 6.15s infinite;
+      animation: rankAnimation 2.1s ease-in-out 4.05s forwards, rankBreath 3.8s ease-in-out 6.35s infinite;
     }
     
     @keyframes rankAnimation {
