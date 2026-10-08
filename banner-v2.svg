@@ -42,7 +42,7 @@
     <text x="72" y="229" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="800" letter-spacing="-1">RENNAN CARDOSO</text>
     <text x="77" y="292" fill="#F5F7FA" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="500" letter-spacing="9">SOFTWARE DEVELOPER</text>
     <rect x="76" y="318" width="4" height="38" rx="2" fill="#58A6FF"/>
-    <text x="102" y="344" fill="#C9D1D9" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing="2">BACK-END  /  APIs  /  DATABASES  /  SYSTEM DESIGN</text>
+    <text x="102" y="344" fill="#C9D1D9" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500" letter-spacing="2">BACK-END  /  APIs  /  DATABASES  /  ERP SYSTEMS</text>
 
     <!-- Área abstrata, propositalmente sutil para não competir com o texto -->
     <path d="M1112 0L1242 128H1330L1460 0" fill="none" stroke="#58A6FF" stroke-opacity=".34" stroke-width="2"/>
