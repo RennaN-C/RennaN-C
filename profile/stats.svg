@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Rennan de Oliveira Cardoso&#39;s GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Commits  : 816, Total PRs: 177, Total PRs Merged: 172, Merged PRs Percentage: 97.18, Total PRs Reviewed: 9, Total Issues: 164</desc>
+        <desc id="descId">Total Commits  : 816, Total PRs: 177, Total PRs Merged: 172, Merged PRs Percentage: 97.18, Total PRs Reviewed: 9, Total Issues: 165</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -74,7 +74,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 133.41934814203933;
+        stroke-dashoffset: 133.41327825505496;
       }
     }
   
@@ -145,7 +145,7 @@
 @media (prefers-reduced-motion: reduce) {
   .rank-circle {
     animation: none !important;
-    stroke-dashoffset: 133.41934814203933 !important;
+    stroke-dashoffset: 133.41327825505496 !important;
     opacity: 0.85 !important;
   }
   .rank-glyph-outline, .rank-suffix-outline {
@@ -294,7 +294,7 @@
         x="224.01"
         y="12.5"
         data-testid="issues"
-      >164</text>
+      >165</text>
     </g>
   </g>
     </svg>
