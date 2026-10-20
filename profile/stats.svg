@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Rennan de Oliveira Cardoso&#39;s GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Commits  : 886, Total PRs: 205, Total PRs Merged: 199, Merged PRs Percentage: 97.07, Total PRs Reviewed: 9, Total Issues: 183</desc>
+        <desc id="descId">Total Commits  : 886, Total PRs: 208, Total PRs Merged: 201, Merged PRs Percentage: 96.63, Total PRs Reviewed: 10, Total Issues: 183</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -74,7 +74,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 128.55984405250024;
+        stroke-dashoffset: 128.13948515467808;
       }
     }
   
@@ -145,7 +145,7 @@
 @media (prefers-reduced-motion: reduce) {
   .rank-circle {
     animation: none !important;
-    stroke-dashoffset: 128.55984405250024 !important;
+    stroke-dashoffset: 128.13948515467808 !important;
     opacity: 0.85 !important;
   }
   .rank-glyph-outline, .rank-suffix-outline {
@@ -234,7 +234,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs"
-      >205</text>
+      >208</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -249,7 +249,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs_merged"
-      >199</text>
+      >201</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -264,7 +264,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs_merged_percentage"
-      >97.07 %</text>
+      >96.63 %</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
@@ -279,7 +279,7 @@
         x="224.01"
         y="12.5"
         data-testid="reviews"
-      >9</text>
+      >10</text>
     </g>
   </g><g transform="translate(0, 125)">
     <g class="stagger" style="animation-delay: 1200ms" transform="translate(25, 0)">
