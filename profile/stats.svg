@@ -8,8 +8,8 @@
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Rennan de Oliveira Cardoso&#39;s GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Commits  : 886, Total PRs: 258, Total PRs Merged: 248, Merged PRs Percentage: 96.12, Total PRs Reviewed: 20, Total Issues: 218</desc>
+        <title id="titleId">Rennan de Oliveira Cardoso&#39;s GitHub Stats, Rank: B+</title>
+        <desc id="descId">Total Commits  : 1886, Total PRs: 259, Total PRs Merged: 251, Merged PRs Percentage: 96.91, Total PRs Reviewed: 20, Total Issues: 220</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -74,7 +74,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 125.66665543623178;
+        stroke-dashoffset: 114.30675191219837;
       }
     }
   
@@ -145,7 +145,7 @@
 @media (prefers-reduced-motion: reduce) {
   .rank-circle {
     animation: none !important;
-    stroke-dashoffset: 125.66665543623178 !important;
+    stroke-dashoffset: 114.30675191219837 !important;
     opacity: 0.85 !important;
   }
   .rank-glyph-outline, .rank-suffix-outline {
@@ -203,7 +203,7 @@
           transform="translate(418.5, 60)">
         <circle class="rank-circle-rim" cx="-10" cy="8" r="40" />
         <circle class="rank-circle" cx="-10" cy="8" r="40" />
-        <g class="rank-text" data-testid="level-rank-icon" aria-label="Rank B"><g transform="translate(-19.9087 16) scale(0.01269531 -0.01269531)"><path class="rank-glyph-outline" d="M786 915Q877 915 924 955Q971 995 971 1073Q971 1150 924 1190.5Q877 1231 786 1231H573V915ZM799 262Q915 262 973.5 311Q1032 360 1032 459Q1032 556 974 604.5Q916 653 799 653H573V262ZM1157 799Q1281 763 1349 666Q1417 569 1417 428Q1417 212 1271 106Q1125 0 827 0H188V1493H766Q1077 1493 1216.5 1399Q1356 1305 1356 1098Q1356 989 1305 912.5Q1254 836 1157 799Z" pathLength="100" /><path class="rank-glyph-fill" d="M786 915Q877 915 924 955Q971 995 971 1073Q971 1150 924 1190.5Q877 1231 786 1231H573V915ZM799 262Q915 262 973.5 311Q1032 360 1032 459Q1032 556 974 604.5Q916 653 799 653H573V262ZM1157 799Q1281 763 1349 666Q1417 569 1417 428Q1417 212 1271 106Q1125 0 827 0H188V1493H766Q1077 1493 1216.5 1399Q1356 1305 1356 1098Q1356 989 1305 912.5Q1254 836 1157 799Z" /></g></g>
+        <g class="rank-text" data-testid="level-rank-icon" aria-label="Rank B+"><g transform="translate(-30.8013 16) scale(0.01269531 -0.01269531)"><path class="rank-glyph-outline" d="M786 915Q877 915 924 955Q971 995 971 1073Q971 1150 924 1190.5Q877 1231 786 1231H573V915ZM799 262Q915 262 973.5 311Q1032 360 1032 459Q1032 556 974 604.5Q916 653 799 653H573V262ZM1157 799Q1281 763 1349 666Q1417 569 1417 428Q1417 212 1271 106Q1125 0 827 0H188V1493H766Q1077 1493 1216.5 1399Q1356 1305 1356 1098Q1356 989 1305 912.5Q1254 836 1157 799Z" pathLength="100" /><path class="rank-glyph-fill" d="M786 915Q877 915 924 955Q971 995 971 1073Q971 1150 924 1190.5Q877 1231 786 1231H573V915ZM799 262Q915 262 973.5 311Q1032 360 1032 459Q1032 556 974 604.5Q916 653 799 653H573V262ZM1157 799Q1281 763 1349 666Q1417 569 1417 428Q1417 212 1271 106Q1125 0 827 0H188V1493H766Q1077 1493 1216.5 1399Q1356 1305 1356 1098Q1356 989 1305 912.5Q1254 836 1157 799Z" /></g><g transform="translate(-10.9839 16) scale(0.01269531 -0.01269531)"><path class="rank-suffix-outline" d="M977 1284V760H1499V524H977V0H739V524H217V760H739V1284Z" pathLength="100" /><path class="rank-suffix-fill" d="M977 1284V760H1499V524H977V0H739V524H217V760H739V1284Z" /></g></g>
       </g>
     <svg x="0" y="0">
       <g transform="translate(0, 0)">
@@ -219,7 +219,7 @@
         x="224.01"
         y="12.5"
         data-testid="commits"
-      >886</text>
+      >1886</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -234,7 +234,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs"
-      >258</text>
+      >259</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -249,7 +249,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs_merged"
-      >248</text>
+      >251</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -264,7 +264,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs_merged_percentage"
-      >96.12 %</text>
+      >96.91 %</text>
     </g>
   </g><g transform="translate(0, 100)">
     <g class="stagger" style="animation-delay: 1050ms" transform="translate(25, 0)">
@@ -294,7 +294,7 @@
         x="224.01"
         y="12.5"
         data-testid="issues"
-      >218</text>
+      >220</text>
     </g>
   </g>
     </svg>
